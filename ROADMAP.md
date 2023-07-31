@@ -6,19 +6,9 @@ exists inside the package manager more extensively. The Buzz.js roadmap is split
 on top of. Even the other, more specified, widgets in the framework like the PageViews that are supposed to be the topmost Widgets in
 the every Page in the WebApp — a System Navigable widget class. 
 
-- 	In the second phase, the package manager is made for my host operating system, Linux, first using Flutter. It is a weird choice,
-acceptably, because, why should a package manager be written with a GUI? It kinda seems either overkill or unnecessary, right? But
-there are good reasons, for that much at least, I assure you. I plan to extend the package manager in the future to support things like
-its own usable code editor dedicated to Buzz.js apps, a drag and drop style editor, and so on. Just because, why not? In the first
-version of the package manager, the only affairs that would be supported would be publishing packages, managing your packages, building
-your apps for the web, viewing your code in an editor that does nothing but highlight syntax, and update files. It would probably do
-a lot more things but I would keep stuff simple in this documentation because this paragraph has run for too long. :joy:
+- 	In the second phase, I'd begin to write the runtime environment for Buzz probably after forking the JS repository. While working on fine-tuning the source code and optimizing it for Buzz, we would be adding comonents to the framework that most people would probably need when making WebApps. It sounds like a lot of work, because it is and I am not going to even try to deceive myself about it :joy:.
 
--	In the third phase, the extension Widgets would be made. Extension widgets here means things like DashboardPageView, MobilePageView,
-DesktopPageView, ResponsivePageView, and so on. Basically, things that are useful for Web Apps that I want to optimize as much as 
-possible for the framework but not actually add to the base SDK. These things would however obviously be in the base SDK but I say not
-adding here because, well, they come as an afterthought. Also, at the third phase, I would work on abstracting things involving hardware
-like cameras, geolocation, microphones, and so on. Exhales, what a long way to go. 
+-	In the third phase, the extension Widgets would be made. Extension widgets here means things like DashboardPageView, MobilePageView, DesktopPageView, ResponsivePageView, and so on. Basically, things that are useful for Web Apps that I want to optimize as much as possible for the framework but not actually add to the base SDK. These things would however obviously be in the base SDK but I say not adding here because, well, they come as an afterthought. Also, at the third phase, I would work on abstracting things involving hardware like cameras, geolocation, microphones, and so on — if need be. Exhales, what a long way to go. 
 
 # Phase 1 Goals :soccer::trophy:
 Date Started:	May 11, 2023 <br>

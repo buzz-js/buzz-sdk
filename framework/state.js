@@ -43,6 +43,7 @@ class StateController {
 			// Update the state.
 			this.currentState = value;
 
+			// Call the widget's on state changed function.
 			this.widget?.onStateChanged(old, value);
 		}
 	}

@@ -79,7 +79,7 @@ class Widget {
 	 *
 	 * @param {AppContext} context The context this app is being rendered from.
 	*/
-	beforeRender(context) {}
+	async beforeRender(context) {}
 
 	/**
 	 * A function called once right after the Widget is added to render tree. Think of it
