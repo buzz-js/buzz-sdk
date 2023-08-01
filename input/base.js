@@ -1,4 +1,5 @@
-import { StatefulWidget } from "../framework/state.js";
+import { StatefulWidget, StateController } from "../framework/state.js";
+import { panic } from "../framework/utilities.js";
 
 /**
  * ## General
@@ -110,6 +111,12 @@ export class InputWidget extends StatefulWidget {
         if(controller) {
             controller.widget = this;
         }
+
+		if(stateController) {
+			if (!(stateController instanceof StateController && stateController.reactive)) {
+				panic("Attempted to bind an invalid state controller to an InputWidget descendant. The state controller must either be an instance of StateController and it must be a reactive state controller.", this);
+			}
+		}
 
         // Assign this controller to this TextInput widget.
         this.inputController = controller;

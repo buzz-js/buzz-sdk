@@ -192,7 +192,7 @@ class TextInput extends InputWidget {
      */
     constructor(textController, {
         name = undefined,
-        controller = new StateController(), 
+        controller = new StateController({reactive: true}), 
         style = new TextInputStyle(),
         hint        =  "",
         padding     = globalThis.buzzContext.theme.editTextTheme?.padding,
@@ -292,7 +292,7 @@ class TextInput extends InputWidget {
      * 
      * @returns The Widget treated as an Icon at the tail end of this TextInput
      */
-    getEndIcon() {
+    get getEndIcon() {
         return this.endIcon;
     }
 
@@ -300,7 +300,7 @@ class TextInput extends InputWidget {
      * 
      * @returns The Widget treated as the leading Icon at the beginning of this TextInput 
      */
-    getStartIcon() {
+    get getStartIcon() {
         return this.startIcon;
     }
 }

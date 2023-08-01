@@ -1,4 +1,3 @@
-import { panic } from '../../framework/utilities.js';
 import { StatelessWidget } from '../../framework/widget.js';
 import { MATCH_CONTENT } from '../../style/style.js';
 import { TextStyle } from '../../text/text.js';
@@ -148,6 +147,15 @@ class TextButton extends StatelessWidget {
 			// Remove the attribute.
 			this.raw.removeAttribute("buzz-button-down"); 
 		});
+	}
+
+	/**
+	 * @param {string} value The new text to place in the TextButton widget.
+	 */
+	set setText(value) {
+		if(value instanceof String) {
+			this.raw.innerText = value;
+		}
 	}
 
 	remove(context) {

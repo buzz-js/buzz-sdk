@@ -25,6 +25,11 @@ class StateController {
 	current;
 
 	/**
+	 * @type {bool}
+	 */
+	reactive;
+
+	/**
 	 * Switch the state of the StateController so that its reactive StatefulWidget parent
 	 * can do what it was required to do on state change. 
 	 */

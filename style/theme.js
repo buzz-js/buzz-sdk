@@ -85,7 +85,7 @@ class TextTheme extends ThemeData {
 		fontFamily = FontFamily.FONT_FAMILY_RALEWAY,
 		fontStyle = 'none',
 		fontWeight = 'normal',
-		backgroundColor = 'yellow',
+		backgroundColor = '#ffcc3f',
 	} = {}) {
 		super(fontColor, iconColor);
 
@@ -121,8 +121,8 @@ class ButtonTheme extends TextTheme {
 		fontColorDisabled = "#000",
 		backgroundColorDisabled = "#777777",
 		backgroundColorHover = "black",
-		fontColorHover = "yellow",
-		backgroundColor = 'yellow',
+		fontColorHover = "#ffcc3f",
+		backgroundColor = '#ffcc3f',
 		textStyleDisabled = "none",
 		textDecorationDisabled = "none",
 	} = {}) {
@@ -156,7 +156,7 @@ class EditTextTheme extends ThemeData {
 		fontColorHint = 'gray',
 		iconSpacing  = '10px',
 		iconColor = 'black',
-		backgroundColor = 'yellow',
+		backgroundColor = '#ffcc3f',
 		borderRadius = RadialGeometry.all('10px'),
 		border = new Border({
 			lineWidth: '2px',
@@ -245,7 +245,7 @@ class AppTheme extends ThemeData {
 	constructor(
 		fontColor = 'black',{
 		primaryColor = 'black', 
-		secondaryColor = 'yellow',
+		secondaryColor = '#ffcc3f',
 		accentColor = 'black',  
 		backgroundColor = Colors.white,
 		textTheme = new TextTheme(),
